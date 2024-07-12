@@ -1,0 +1,16 @@
+log4j-44032
+
+Note that this program is modified on Apache Common Log4j project.
+
+To checkout the original project:
+
+#BUGGY
+svn co -r 612862 http://svn.apache.org/repos/asf/logging/log4j/trunk/
+
+#FIXED
+svn co -r 612863 http://svn.apache.org/repos/asf/logging/log4j/trunk/
+
+Acknowledgement:
+
+This bug was originally prepared by Anuradha Pardeshi and Nathaniel
+Dykens, and was prepared for submission to SIR by Yu Lin.
