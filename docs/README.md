@@ -1,33 +1,21 @@
 # directory structure
 
-​```markdown
-project
+```
+log4j
 ├── src
+
 │   ├── main
+
 │   │   ├── java
-│   │   │   └── com
-│   │   │       └── example
-│   │   │           └── MyClass.java
-│   │   └── resources
-│   │       └── config.properties
-│   └── test
-│       ├── java
-│       │   └── com
-│       │       └── example
-│       │           └── MyTest.java
-│       └── resources
-│           └── test-data.json
-├── lib
-│   ├── library1.jar
-│   └── library2.jar
-├── docs
-│   ├── README.md
-│   └── API.md
-└── build.gradle
-​```
 
+│   │   │   └──Test.java(This is the entry program for constructing the call graph.)
+       
+├── source(This is the directory containing the source code compiled from the analyzed program.)
+   
+├── versions(Here is the source code of the analyzed program.)
 
-
+└── lib(These are the JAR files on which the analyzed program depends for execution.)
+```
 ​
 
 Running `src\main\java\Test.java` in the IDEA environment analyzes the project in the `source` directory, with the entry point being the `main` function in the `org.apache.log4j.TestThrowableStrRep` class.
