@@ -33,8 +33,16 @@ public class Test {
 
     public static void main(String[] args) throws Throwable {
         PrintStream ps = System.out;
+        String mainClassName ;
 
-        String classpath = ".\\source";
+        String classpath;
+        if (args==null||args.length==0){
+            classpath = ".\\source";
+            mainClassName = "org.apache.log4j.TestThrowableStrRep";
+        }else {
+            classpath=args[0];
+            mainClassName=args[1];
+        }
 
         AnalysisScope scope =AnalysisScopeReader.makeJavaBinaryAnalysisScope(classpath,(new FileProvider()).getFile("EclipseDefaultExclusions.txt"/*"/data/mywork/llm/EclipseDefaultExclusions.txt"*/));
 
@@ -48,7 +56,6 @@ public class Test {
         ClassHierarchy cha = ClassHierarchyFactory.make(scope);
         System.out.println(cha.getNumberOfClasses() + " classes");
         String mainSignature = ".main"+DESC_MAIN;
-        String mainClassName = "org.apache.log4j.TestThrowableStrRep";//"org.apache.log4j.TestThrowableStrRep";//"raxextended.RAXextended";//args[1];//"datarace.Main";//"airline.Main";
         String mainMethodSig =
                 mainClassName + mainSignature;
         Iterable<Entrypoint> entrypoints = findEntryPoints(cha, mainClassName,false);
