@@ -36,7 +36,7 @@ public class Test {
 
         String classpath = ".\\source";
 
-        AnalysisScope scope =AnalysisScopeReader.makeJavaBinaryAnalysisScope(classpath,(new FileProvider()).getFile("E:\\static_filter\\filter\\filter\\EclipseDefaultExclusions.txt"/*"/data/mywork/llm/EclipseDefaultExclusions.txt"*/));
+        AnalysisScope scope =AnalysisScopeReader.makeJavaBinaryAnalysisScope(classpath,(new FileProvider()).getFile("EclipseDefaultExclusions.txt"/*"/data/mywork/llm/EclipseDefaultExclusions.txt"*/));
 
         List<JarFile> dependencyJars = new ArrayList<>();
         dependencyJars.add(new JarFile(".\\lib\\javaee-api-5.jar"));
@@ -63,8 +63,6 @@ public class Test {
 
         long start_time = System.currentTimeMillis();
         CallGraph cg  = builder.makeCallGraph(options, null);
-
-
 
 
         PointerAnalysis<InstanceKey> pta = builder.getPointerAnalysis();
