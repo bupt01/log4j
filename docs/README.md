@@ -22,7 +22,7 @@ log4j
 
 # Reproduction steps
 1. You can open the project using IntelliJ IDEA and then run the `main` method in the `Test.java`.
-2. You can also build the project using Maven: `mvn package`, and then cd target,run it using `java -jar target/log4j-1.0-SNAPSHOT.jar`.
+2. You can also build the project using Maven: `mvn package`,run it using `java -jar target/log4j-1.0-SNAPSHOT.jar`.
 
 
 It will analyze the project located in the `source` directory, with the entry point being the `main` function in the `org.apache.log4j.TestThrowableStrRep` class.
