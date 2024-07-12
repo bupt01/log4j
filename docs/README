@@ -1,4 +1,5 @@
-# directory structure.
+# directory structure
+
 ​```
 log4j
 ├── src
@@ -12,7 +13,8 @@ log4j
 
 Running `src\main\java\Test.java` in the IDEA environment analyzes the project in the `source` directory, with the entry point being the `main` function in the `org.apache.log4j.TestThrowableStrRep` class.
 
-# Error message:
+# Error message
+
 ```
 WARNING: java_runtime_dir null in wala.properties is invalid.  Using boot class path instead.
 762 classes
