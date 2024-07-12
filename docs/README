@@ -1,8 +1,5 @@
-
-
 Below is the directory structure of the project.
-
-​```markdown
+​```
 log4j
 ├── src
 │   ├── main
@@ -14,6 +11,7 @@ log4j
 ​```
 
 Running `src\main\java\Test.java` in the IDEA environment analyzes the project in the `source` directory, with the entry point being the `main` function in the `org.apache.log4j.TestThrowableStrRep` class.
+
 Error message as follows:
 ```
 WARNING: java_runtime_dir null in wala.properties is invalid.  Using boot class path instead.
@@ -44,74 +42,7 @@ Exception in thread "main" java.lang.IllegalStateException: Could not create a e
 24. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Loracle/jrockit/jfr/jdkevents/throwabletransform/ConstructorWriter> No superclass found for <Primordial,Loracle/jrockit/jfr/jdkevents/throwabletransform/ConstructorWriter> Superclass name Ljdk/internal/org/objectweb/asm/MethodVisitor
 25. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Loracle/jrockit/jfr/openmbean/LazyImmutableJFRMBeanType$ImmutableCompositeData> No superclass found for <Primordial,Loracle/jrockit/jfr/openmbean/LazyImmutableJFRMBeanType$ImmutableCompositeData> Superclass name Lsun/management/LazyCompositeData
 26. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Loracle/jrockit/jfr/settings/JFCParser$ConfigurationHandler> No superclass found for <Primordial,Loracle/jrockit/jfr/settings/JFCParser$ConfigurationHandler> Superclass name Lorg/xml/sax/helpers/DefaultHandler
-27. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/DigesterOutputStream> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/DigesterOutputStream> Superclass name Ljava/io/OutputStream
-28. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/MacOutputStream> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/MacOutputStream> Superclass name Ljava/io/ByteArrayOutputStream
-29. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/SignerOutputStream> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/SignerOutputStream> Superclass name Ljava/io/ByteArrayOutputStream
-30. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheCanonicalizer> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheCanonicalizer> Superclass name Ljavax/xml/crypto/dsig/TransformService
-31. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheOctetStreamData> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheOctetStreamData> Superclass name Ljavax/xml/crypto/OctetStreamData
-32. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-33. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMBase64Transform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-34. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMCanonicalXMLC14N11Method> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheCanonicalizer> Superclass name Ljavax/xml/crypto/dsig/TransformService
-35. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMCanonicalXMLC14NMethod> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheCanonicalizer> Superclass name Ljavax/xml/crypto/dsig/TransformService
-36. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMEnvelopedTransform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-37. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMExcC14NMethod> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheCanonicalizer> Superclass name Ljavax/xml/crypto/dsig/TransformService
-38. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMKeyInfoFactory$UnmarshalContext> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMKeyInfoFactory$UnmarshalContext> Superclass name Ljavax/xml/crypto/dom/DOMCryptoContext
-39. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMKeyInfoFactory> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMKeyInfoFactory> Superclass name Ljavax/xml/crypto/dsig/keyinfo/KeyInfoFactory
-40. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMUtils$NodeSet> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMUtils$NodeSet> Superclass name Ljava/util/AbstractSet
-41. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXMLSignatureFactory$UnmarshalContext> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXMLSignatureFactory$UnmarshalContext> Superclass name Ljavax/xml/crypto/dom/DOMCryptoContext
-42. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXMLSignatureFactory> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXMLSignatureFactory> Superclass name Ljavax/xml/crypto/dsig/XMLSignatureFactory
-43. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXPathFilter2Transform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-44. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXPathTransform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-45. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/DOMXSLTTransform> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/ApacheTransform> Superclass name Ljavax/xml/crypto/dsig/TransformService
-46. [Moderate] class com.ibm.wala.ipa.cha.ClassHierarchy$ClassExclusion : <Primordial,Lorg/jcp/xml/dsig/internal/dom/XMLDSigRI> No superclass found for <Primordial,Lorg/jcp/xml/dsig/internal/dom/XMLDSigRI> Superclass name Ljava/security/Provider
-47. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lcom/oracle/jrockit/jfr/EventInfo
-48. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/io/Closeable
-49. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/io/Externalizable
-50. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/io/FileFilter
-51. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/io/FilenameFilter
-52. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/io/Serializable
-53. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/nio/channels/ReadableByteChannel
-54. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/security/PrivilegedAction
-55. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/security/PrivilegedExceptionAction
-56. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/Comparator
-57. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/Enumeration
-58. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/Iterator
-59. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/Map$Entry
-60. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/PrimitiveIterator$OfInt
-61. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/function/BiFunction
-62. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/function/Function
-63. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljava/util/function/Supplier
-64. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/Data
-65. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/NodeSetData
-66. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/URIDereferencer
-67. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/XMLStructure
-68. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dom/DOMURIReference
-69. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/CanonicalizationMethod
-70. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/DigestMethod
-71. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/Manifest
-72. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/Reference
-73. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/SignatureMethod
-74. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/SignatureProperties
-75. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/SignatureProperty
-76. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/SignedInfo
-77. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/Transform
-78. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/XMLObject
-79. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/XMLSignature
-80. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/XMLSignature$SignatureValue
-81. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/KeyInfo
-82. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/KeyName
-83. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/KeyValue
-84. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/PGPData
-85. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/RetrievalMethod
-86. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/X509Data
-87. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljavax/xml/crypto/dsig/keyinfo/X509IssuerSerial
-88. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Ljdk/internal/instrumentation/Logger
-89. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lorg/xml/sax/ErrorHandler
-90. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lsun/misc/JavaLangAccess
-91. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lsun/misc/JavaLangRefAccess
-92. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lsun/misc/SignalHandler
-93. [SEVERE] class com.ibm.wala.classLoader.BytecodeClass$ClassNotFoundWarning : Lsun/reflect/LangReflectAccess
-
+	...
 	at com.ibm.wala.ipa.callgraph.propagation.PropagationCallGraphBuilder.makeCallGraph(PropagationCallGraphBuilder.java:241)
 	at Test.main(Test.java:65)
 ```
