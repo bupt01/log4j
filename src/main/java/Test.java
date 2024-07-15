@@ -12,6 +12,8 @@
 import com.ibm.wala.classLoader.IClass;
 import com.ibm.wala.classLoader.IMethod;
 import com.ibm.wala.classLoader.JarFileModule;
+import com.ibm.wala.core.util.config.AnalysisScopeReader;
+import com.ibm.wala.core.util.io.FileProvider;
 import com.ibm.wala.ipa.callgraph.*;
 import com.ibm.wala.ipa.callgraph.impl.DefaultEntrypoint;
 import com.ibm.wala.ipa.callgraph.impl.Util;
@@ -20,8 +22,6 @@ import com.ibm.wala.ipa.cha.ClassHierarchy;
 import com.ibm.wala.ipa.cha.ClassHierarchyFactory;
 import com.ibm.wala.ipa.cha.IClassHierarchy;
 import com.ibm.wala.types.ClassLoaderReference;
-import com.ibm.wala.util.config.AnalysisScopeReader;
-import com.ibm.wala.util.io.FileProvider;
 
 
 import java.io.*;
@@ -44,7 +44,7 @@ public class Test {
             mainClassName=args[1];
         }
 
-        AnalysisScope scope =AnalysisScopeReader.makeJavaBinaryAnalysisScope(classpath,(new FileProvider()).getFile("EclipseDefaultExclusions.txt"/*"/data/mywork/llm/EclipseDefaultExclusions.txt"*/));
+        AnalysisScope scope = AnalysisScopeReader.instance.makeJavaBinaryAnalysisScope(classpath,(new FileProvider()).getFile("EclipseDefaultExclusions.txt"/*"/data/mywork/llm/EclipseDefaultExclusions.txt"*/));
 
         List<JarFile> dependencyJars = new ArrayList<>();
         dependencyJars.add(new JarFile(".\\lib\\javaee-api-5.jar"));
